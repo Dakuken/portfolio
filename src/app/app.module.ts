@@ -12,10 +12,14 @@ import { FooterComponent } from './footer/footer.component';
 import { HomeModule } from './home/home.module';
 import { HeaderModule } from './header/header.module';
 import { FooterModule } from './footer/footer.module';
+import { AboutMeComponent } from './about-me/about-me.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    AboutMeComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
