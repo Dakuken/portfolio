@@ -8,6 +8,7 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  mobile?: boolean
   wichPath?: string
 
   constructor(private router: Router) {
@@ -18,6 +19,9 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.screen.width <= 500) {
+      this.mobile = true;
+    }
   }
 
 
