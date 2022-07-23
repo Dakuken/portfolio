@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header.component';
+import { NbButtonModule, NbContextMenuModule } from '@nebular/theme';
 
 
 
@@ -9,7 +10,9 @@ import { HeaderComponent } from './header.component';
     HeaderComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    NbContextMenuModule,
+    NbButtonModule
   ],
   exports: [HeaderComponent]
 })

@@ -8,8 +8,11 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
-  mobile?: boolean
+  mobile: boolean = false
   wichPath?: string
+
+
+
 
   constructor(private router: Router) {
     setTimeout(() => {
@@ -19,14 +22,13 @@ export class HeaderComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    if (window.screen.width <= 500) {
+    if (window.screen.width <= 600) {
       this.mobile = true;
     }
   }
 
 
   goTo(path: string) {
-
     //? to avoid infinite refresh for nothing
     if (this.router.url !== path) {
       this.router.navigate([path])

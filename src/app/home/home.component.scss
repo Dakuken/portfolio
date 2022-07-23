@@ -1,0 +1,55 @@
+#image__moi {
+    width: 225px;
+    height: 300px;
+    background-image: url("../../assets/images/profil1.jpg");
+    background-size: contain;
+    margin: 1.5rem;
+    border-radius: 12%;
+}
+
+p {
+    font-size: 1.5rem;
+    margin: 0;
+    line-height: 1.7rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem 0.5rem;
+}
+
+
+.center {
+    text-align: center;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.center-image {
+    display: flex;
+    justify-content: center;
+}
+
+
+.description {
+    width: 65%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.description>p {
+    margin-top: 1%;
+    line-height: 1.5rem;
+}
+
+.important-text {
+    font-weight: bold;
+    color: #0095ff
+}
+
+ul>li {
+    margin-bottom: 0.7rem;
+}
