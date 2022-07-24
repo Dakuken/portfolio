@@ -6,7 +6,8 @@ import {
     group,
     animateChild,
     animate,
-    keyframes
+    keyframes,
+    stagger
 } from '@angular/animations';
 
 
@@ -33,10 +34,10 @@ import {
 
 export const slider =
     trigger('routeAnimations', [
-        transition('* => isLeft', slideTo('left')),
+        transition('* => Accueil', [query('.machin', animTo(0))]),
         transition('* => isRight', slideTo('right')),
         transition('isRight => *', slideTo('left')),
-        transition('isLeft => *', slideTo('right')),
+        // transition('Accueil => *', [query('.machin', animTo(1))]),
     ])
 
 function slideTo(direction: string) {
@@ -54,6 +55,23 @@ function slideTo(direction: string) {
             query(':leave', [animate('600ms ease', style({ [direction]: '100%' }))], { optional: true }),
             query(':enter', [animate('600ms ease', style({ [direction]: '0%' }))
             ]),
+        ])
+    ]
+}
+
+export const anim =
+
+    trigger('animation1', [
+        transition(':enter', [query('.machin', animTo(0))]),
+        transition(':leave', [query('.machin', animTo(1))]),
+    ])
+
+function animTo(base: number) {
+    let fin = (base === 0) ? 1 : 0
+    return [
+        style({ opacity: base, }),
+        stagger(500, [
+            animate('600ms ease', style({ opacity: fin }))
         ])
     ]
 }

@@ -5,7 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, data: { animation: 'isLeft' } },
+  { path: 'home', component: HomeComponent, data: { animation: 'Accueil' } },
   { path: 'about-me', component: AboutMeComponent },
   { path: 'portfolio', component: PortfolioComponent, data: { animation: 'isRight' } },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
