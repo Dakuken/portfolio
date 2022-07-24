@@ -49,6 +49,6 @@ function animTo(base: number) {
     let fin = (base === 0) ? 1 : 0
     return [
         style({ opacity: base, }),
-        animate('600ms ease', style({ opacity: fin })),
+        animate('1000ms ease', style({ opacity: fin })),
     ]
 }

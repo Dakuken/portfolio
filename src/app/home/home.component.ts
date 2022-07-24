@@ -34,8 +34,8 @@ export class HomeComponent implements AfterViewInit {
     const e1 = <HTMLDivElement>this.renderer.selectRootElement('#card1', true);
     const e2 = <HTMLDivElement>this.renderer.selectRootElement('#card2', true);
     const e3 = <HTMLDivElement>this.renderer.selectRootElement('#card3', true);
-    this.heightItem2.push(e1.clientHeight)
-    this.heightItem2.push(e2.clientHeight)
+    this.heightItem2.push(e1.clientHeight * 0.5)
+    this.heightItem2.push(e2.clientHeight * 0.3)
     this.heightItem2.push(e3.clientHeight)
     this.makeALoopWait()
   }
@@ -43,7 +43,7 @@ export class HomeComponent implements AfterViewInit {
     new Promise(resolve => setTimeout(resolve, ms))
   async makeALoopWait() {
     for (let i = 0; i <= this.tabOffSetTop.length - 1; i++) {
-      await this.delay(200)
+      await this.delay(100)
       if (this.tabOffSetTop[i] + this.heightItem2[i] < this.screenHeight)
         this.tab[i] = 'true'
     }
