@@ -5,7 +5,7 @@
     height: 200px;
     background-image: url("../../assets/images/moi.png");
     background-size: cover;
-    margin: 1.5rem;
+    margin: 1.2rem 0 1.7rem 0;
     border-radius: 50%;
     border: 10px solid nb-theme(color-primary-800);
     box-shadow: 0px 10px 30px -4px #000000;
@@ -13,13 +13,23 @@
 
 
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1001px) {
     p {
         font-size: 1.3rem;
     }
 
     nb-card {
         width: 50%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    p {
+        font-size: 1.3rem;
+    }
+
+    nb-card {
+        width: 75%;
     }
 }
 
@@ -32,17 +42,16 @@
 
 
 p {
+    text-align: left;
     font-family: 'Roboto';
     margin: 0;
     line-height: 1.7rem;
-
 }
 
 .title {
     line-height: 4rem;
     font-size: 4rem;
     font-weight: bold;
-    margin-bottom: 2rem;
 }
 
 
@@ -113,7 +122,6 @@ ul>li {
 
 
 nb-card {
-
     min-width: 200px;
     margin-right: auto;
     margin-left: auto;
