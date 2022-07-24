@@ -5,7 +5,8 @@ import {
     query,
     group,
     animate,
-    stagger
+    stagger,
+    state
 } from '@angular/animations';
 
 export const slider =
@@ -38,16 +39,16 @@ function slideTo(direction: string) {
 export const anim =
 
     trigger('animation1', [
-        transition(':enter', [query('.machin', animTo(0))]),
-        transition(':leave', [query('.machin', animTo(1))]),
+        state('false', style({ opacity: 0 })),
+        state('true', style({ opacity: 1 })),
+        transition('false => true', animTo(0)),
+        transition('true => false', animTo(1)),
     ])
 
 function animTo(base: number) {
     let fin = (base === 0) ? 1 : 0
     return [
         style({ opacity: base, }),
-        stagger(500, [
-            animate('600ms ease', style({ opacity: fin }))
-        ])
+        animate('600ms ease', style({ opacity: fin })),
     ]
 }

@@ -6,9 +6,10 @@
         <div id="image__moi" class="content__image"></div>
     </div>
     <br>
-    <!-- <button (click)="onShow()"> poueeet</button> -->
-    <div>
-        <nb-card accent="success" class="machin">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <div #card1>
+        <nb-card accent="success" [@animation1]="tab[0]" id="card1">
             <nb-card-header>
                 <p>Un peu plus sur moi</p>
             </nb-card-header>
@@ -22,38 +23,41 @@
 
         <br>
 
-
-        <nb-card accent="info" class="machin">
-            <nb-card-header>
-                <p>Ce que je peux vous apporter</p>
-            </nb-card-header>
-            <nb-card-body>
-                <ul>
-                    <li>
-                        <p>Site web statique : Augmenter votre <span class='important-text-info'>visibilité sur internet</span>. Idéal pour afficher vos coordonnées, horaire et <span class="important-text-info"> présenter votre entreprise </span>.</p>
-                    </li>
-                    <li>
-                        <p>Site web dynamique : Pour qu’un site web <span class="important-text-info"> donne envie aux internautes de le visiter </span> il doit être <span class="important-text-info">vivant</span>. Site <span class="important-text-info">personnalisé pour chaque utilisateur </span>, afin d’améliorer leur expérience. Partager régulièrement du contenu est signe que votre site bouge et que votre entreprise est en activité.</p>
-                    </li>
-                    <li>
-                        <p>Application web (exemple : réalisation d’un site web qui fonctionne comme une vraie application mobile ou un logiciel sans l’inconvénient de devoir l’installer. Par exemple l’ajout de chat en temps réel lors de la navigation ou permettre une navigation plus fluide)</p>
-                    </li>
-                </ul>
-            </nb-card-body>
-        </nb-card>
+        <div #card2>
+            <nb-card accent="info" [@animation1]="tab[1]" id="card2">
+                <nb-card-header>
+                    <p>Ce que je peux vous apporter</p>
+                </nb-card-header>
+                <nb-card-body>
+                    <ul>
+                        <li>
+                            <p>Site web statique : Augmenter votre <span class='important-text-info'>visibilité sur internet</span>. Idéal pour afficher vos coordonnées, horaire et <span class="important-text-info"> présenter votre entreprise </span>.</p>
+                        </li>
+                        <li>
+                            <p>Site web dynamique : Pour qu’un site web <span class="important-text-info"> donne envie aux internautes de le visiter </span> il doit être <span class="important-text-info">vivant</span>. Site <span class="important-text-info">personnalisé pour chaque utilisateur </span>, afin d’améliorer leur expérience. Partager régulièrement du contenu est signe que votre site bouge et que votre entreprise est en activité.</p>
+                        </li>
+                        <li>
+                            <p>Application web (exemple : réalisation d’un site web qui fonctionne comme une vraie application mobile ou un logiciel sans l’inconvénient de devoir l’installer. Par exemple l’ajout de chat en temps réel lors de la navigation ou permettre une navigation plus fluide)</p>
+                        </li>
+                    </ul>
+                </nb-card-body>
+            </nb-card>
+        </div>
 
         <br>
 
-        <nb-card accent="primary" class="machin">
-            <nb-card-header>
-                <p>Pourquoi choisir un étudiant ?</p>
-            </nb-card-header>
-            <nb-card-body>
-                <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla
-                    Bla bla blaBla bla blaBla bla blaBla bla bla<span class="important-text-primary"> Bla bla blaBla bla bla</span>
-                    Bla bla blaBla bla blaBla bla blaBla bla bla</p>
-                <br>
-            </nb-card-body>
-        </nb-card>
+        <div #card3>
+            <nb-card accent="primary" [@animation1]="tab[2]" id="card3">
+                <nb-card-header>
+                    <p>Pourquoi choisir un étudiant ?</p>
+                </nb-card-header>
+                <nb-card-body>
+                    <p>Bla bla bla Bla bla bla Bla bla bla Bla bla bla
+                        Bla bla blaBla bla blaBla bla blaBla bla bla<span class=" important-text-primary"> Bla bla blaBla bla bla</span>
+                        Bla bla blaBla bla blaBla bla blaBla bla bla</p>
+                    <br>
+                </nb-card-body>
+            </nb-card>
+        </div>
     </div>
 </div>
