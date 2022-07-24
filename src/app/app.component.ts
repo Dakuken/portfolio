@@ -1,11 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
-
+import { ChildrenOutletContexts, Router, RouterOutlet } from '@angular/router';
+import { slider } from './route-animation'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    slider
+  ]
 })
 export class AppComponent implements OnInit {
   mobile: boolean = false
@@ -33,7 +36,7 @@ export class AppComponent implements OnInit {
     }
   ]
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private contexts: ChildrenOutletContexts) {
 
   }
 
@@ -51,5 +54,8 @@ export class AppComponent implements OnInit {
     }
   }
 
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRouteData && outlet.activatedRouteData['animation']
+  }
 
 }

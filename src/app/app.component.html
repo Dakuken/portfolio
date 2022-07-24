@@ -9,7 +9,9 @@
     <!-- <button outline nbButton status="info" [nbContextMenu]="mobileMenu" *ngIf="mobile" ngCloak>
       Menu
     </button> -->
-    <router-outlet></router-outlet>
+    <main [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </main>
   </nb-layout-column>
 
   <nb-layout-footer fixed>
