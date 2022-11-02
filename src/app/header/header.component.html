@@ -1,19 +1,19 @@
 <div class='navbar'>
-    <div class="navbar__content">
-        <a (click)="this.goTo('/home')" [ngClass]="{'active': this.wichPath === '/home'}">
-            <div class="navbar__content__accueil">
-                <p>Accueil</p>
-            </div>
-        </a>
-        <a (click)="this.goTo('/about-me')" [ngClass]="{'active': this.wichPath === '/about-me'}">
-            <div class="navbar__content__apropos">
-                <p>À propos</p>
-            </div>
-        </a>
-        <a (click)="this.goTo('/portfolio')" [ngClass]="{'active': this.wichPath === '/portfolio'}">
-            <div class="navbar__content__portfolio">
-                <p>Portfolio</p>
-            </div>
-        </a>
-    </div>
+  <div class="navbar__content">
+    <a (click)="this.goTo('/home')" [ngClass]="{'active': this.wichPath === '/home'}">
+      <div class="navbar__content__accueil">
+        <p>Accueil</p>
+      </div>
+    </a>
+    <a (click)="this.goTo('/about-me')" [ngClass]="{'active': this.wichPath === '/about-me'}">
+      <div class="navbar__content__apropos">
+        <p>À propos</p>
+      </div>
+    </a>
+    <a (click)="this.goTo('/portfolio')" [ngClass]="{'active': this.wichPath === '/portfolio'}">
+      <div class="navbar__content__portfolio">
+        <p>Portfolio</p>
+      </div>
+    </a>
+  </div>
 </div>

@@ -25,3 +25,7 @@ main {
   text-align: center;
   position: relative
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}
