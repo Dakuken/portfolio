@@ -1,0 +1,32 @@
+@use '../../../../../themes.scss' as *;
+
+* {
+  font-family: roboto;
+}
+
+.important-text-info {
+  font-weight: 570;
+  color: nb-theme(color-info-default);
+}
+
+.bleu {
+  text-decoration-color: nb-theme(color-info-400);
+}
+
+.important-text-warning {
+  font-weight: 570;
+  color: nb-theme(color-warning-default);
+}
+
+.jaune {
+  text-decoration-color: nb-theme(color-warning-default);
+}
+
+.important-text-danger {
+  font-weight: 570;
+  color: nb-theme(color-danger-500);
+}
+
+.rouge {
+  text-decoration-color: nb-theme(color-danger-600);
+}
