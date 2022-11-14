@@ -1,0 +1,14 @@
+@use '../../../../../../themes.scss' as *;
+
+* {
+  font-family: roboto;
+}
+
+.important-text-warning {
+  font-weight: 570;
+  color: nb-theme(color-warning-default);
+}
+
+.jaune {
+  text-decoration-color: nb-theme(color-warning-default);
+}
