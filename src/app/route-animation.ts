@@ -12,6 +12,7 @@ import {
 export const slider =
   trigger('routeAnimations', [
     transition('about => home', fade('left')),
+    transition('home => *', fade('right')),
     transition('about => portfolio', fade('right')),
   ])
 
