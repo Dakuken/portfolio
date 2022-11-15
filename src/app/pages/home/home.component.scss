@@ -8,7 +8,7 @@
   margin: 1.2rem 0 1.7rem 0;
   border-radius: 50%;
   border: 5px solid nb-theme(color-info-900);
-  box-shadow: 0px 10px 30px -4px #000000;
+
 }
 
 
@@ -16,8 +16,8 @@
   position: relative;
   // left: 50%;
   // transform: translateX(-50%);
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
 
   &:hover {
     .flip-inner {
@@ -41,6 +41,7 @@
       backface-visibility: hidden;
       border-radius: 50%;
       overflow: hidden;
+      box-shadow: 0px 10px 30px -4px #000000;
     }
 
     .front {
