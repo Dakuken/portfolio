@@ -1,0 +1,23 @@
+.imageSite{
+   div > p {
+     opacity: 0;
+     transition: all 0.3s ease;
+   }
+
+  img {
+    filter: brightness(0.9);
+    transition: all 0.3s ease;
+  }
+}
+
+.imageSite:hover{
+  div > p {
+    opacity: 1;
+    transition: all 0.3s ease;
+  }
+
+  img {
+    filter: brightness(0.5);
+    transition: all 0.3s ease;
+  }
+}

@@ -1,0 +1,18 @@
+@use '../../../../../../themes.scss' as *;
+
+* {
+  font-family: roboto;
+}
+
+.important-text-danger {
+  font-weight: 570;
+  color: nb-theme(color-danger-500);
+}
+
+.rouge {
+  text-decoration-color: nb-theme(color-danger-600);
+}
+
+.ombrer {
+  box-shadow: 0px 7px 16px 3px rgba(0, 0, 0, 0.66);
+}
