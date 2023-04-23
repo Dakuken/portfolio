@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NbThemeModule, NbLayoutModule, NbMenuModule, NbContextMenuModule, NbButtonModule, NbCardModule} from '@nebular/theme';
+import {NbThemeModule, NbLayoutModule, NbMenuModule, NbContextMenuModule, NbButtonModule, NbCardModule, NbIconModule} from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { FooterComponent } from './footer/footer.component';
 import { HomeModule } from './pages/home/home.module';
@@ -38,6 +38,7 @@ import { ProposCardComponent } from './pages/home/components/propos-card/propos-
         NbContextMenuModule,
         NbButtonModule,
         NbCardModule,
+        NbIconModule,
 
     ],
     providers: [],
